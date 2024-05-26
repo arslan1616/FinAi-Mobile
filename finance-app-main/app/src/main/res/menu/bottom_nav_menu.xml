@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Ana Sayfa" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"
+        android:title="Profilim" />
+
+    <item
+        android:id="@+id/RiskAnalizi"
+        android:icon="@drawable/ic_testlogo"
+        android:title="Risk Analizi" />
+    <item
+        android:id="@+id/YapayZeka"
+        android:icon="@drawable/baseline_auto_graph_24"
+        android:title="Yapay Zeka Tahminleri"
+        />
+</menu>

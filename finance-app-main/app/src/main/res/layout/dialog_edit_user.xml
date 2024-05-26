@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/input_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/input_risk_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Risk Status"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/input_is_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Is Admin (1 for yes, 0 for no)"
+        android:inputType="number" />
+</LinearLayout>

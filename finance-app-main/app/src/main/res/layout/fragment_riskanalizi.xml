@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiskProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvQuestion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yaşınız kaç?"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/rgAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18-35 yaş arası"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="36-50 yaş arası"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="51 yaş üstü"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yatırım tecrübeniz nedir?"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/rgExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/experience_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 yıldan az"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/experience_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-5 yıl arası"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/experience_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 yıldan fazla"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finansal durumunuz nedir?"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/rgFinancial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/financial_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stabil"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/financial_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orta"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/financial_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kararsız"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestion4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yatırım hedefleriniz nedir?"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/rgGoals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/goals_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uzun vadeli büyüme"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/goals_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gelir"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/goals_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sermaye koruma"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvQuestion5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Risk toleransınız nedir?"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/rgTolerance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/tolerance_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Düşük"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/tolerance_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orta"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/tolerance_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yüksek"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCalculateRisk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Risk Profilini Hesapla"
+            android:textAllCaps="true"
+            android:textColor="#161E22"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FEFDFD" />
+
+        <TextView
+            android:id="@+id/tvRiskProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Risk Profiliniz:"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/btnSaveRisk"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Risk Profilini Kaydet"
+            android:textAllCaps="true"
+            android:textColor="#161E22"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FEFDFD" />
+    </LinearLayout>
+</ScrollView>

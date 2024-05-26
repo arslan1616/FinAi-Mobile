@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9DFDD"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/finai_logo2"
+        android:layout_width="318dp"
+        android:layout_height="284dp"
+        android:layout_gravity="center"
+        android:src="@drawable/finai_logo2" />
+
+    <!-- Container for centering buttons -->
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="ADMİN PANELİ"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_manage_layout"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Menüleri Düzenle"
+            android:textAllCaps="true"
+            android:textColor="#161E22"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FEFDFD" />
+
+        <Button
+            android:id="@+id/btn_manage_users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Kullanıcıları Yönet"
+            android:textAllCaps="true"
+            android:textColor="#161E22"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FEFDFD" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Çıkış Yap"
+            android:textAllCaps="true"
+            android:textColor="#161E22"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FEFDFD" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:rowCount="2">
+
+
+    </GridLayout>
+</LinearLayout>

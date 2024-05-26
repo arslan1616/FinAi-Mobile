@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/text_view_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ad" />
+
+    <TextView
+        android:id="@+id/text_view_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Soyad" />
+
+    <TextView
+        android:id="@+id/text_view_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Numara" />
+
+    <TextView
+        android:id="@+id/text_view_risk_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Risk" />
+
+    <TextView
+        android:id="@+id/text_view_is_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Admin" />
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Düzenle"
+        android:textAllCaps="true"
+        android:textColor="#FEFDFD"
+        android:textStyle="bold"
+        app:backgroundTint="#161E22"/>
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Sil"
+        android:textAllCaps="true"
+        android:textColor="#FEFDFD"
+        android:textStyle="bold"
+        app:backgroundTint="#161E22" />
+</LinearLayout>
